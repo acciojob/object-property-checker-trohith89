@@ -2,8 +2,9 @@ const sampleObject = { red: "#FF0000", green: "#00FF00", white: "#FFFFFF" };
 
 function hasKey(key) {
   //   write your code here
-	for(let i=0; i<sampleObject.length; i++){
-		if(Object.keys(sampleObject)[i] == key){
+	const arr = Object.keys(sampleObject);
+	for(let i=0; i<arr.length; i++){
+		if(arr[i]==key){
 			return true;
 		}
 	}
@@ -11,5 +12,5 @@ function hasKey(key) {
 }
 
 // Do not change the code below
-// const key = prompt("Enter Key.");
-// alert(hasKey(key));
+const key = prompt("Enter Key.");
+alert(hasKey(key));
